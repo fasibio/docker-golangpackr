@@ -1,2 +1,2 @@
 FROM golang:alpine
-RUN go get -u github.com/gobuffalo/packr/packr
+RUN apk update && apk add git && go get -u github.com/gobuffalo/packr/packr
